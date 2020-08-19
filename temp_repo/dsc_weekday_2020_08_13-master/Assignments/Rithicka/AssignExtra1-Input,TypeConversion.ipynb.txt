@@ -1,0 +1,342 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter the temperature in Fahrenheit:12\n",
+      "temperature in celcius: -11.11111111111111\n"
+     ]
+    }
+   ],
+   "source": [
+    "#C=(F−32)×5/9\n",
+    "\n",
+    "temp = int(input('enter the temperature in Fahrenheit:'))\n",
+    "cel = (temp - 32)*(5/9)\n",
+    "print('temperature in celcius:', cel)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter the number:2\n",
+      "square of the number: 4\n",
+      "cube of the number: 8\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = int(input('enter the number:'))\n",
+    "print('square of the number:',a**2)\n",
+    "print('cube of the number:',a**3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter the number:2\n",
+      "enter the number:3\n",
+      "13\n",
+      "9\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = int(input('enter the number:'))\n",
+    "m = int(input('enter the number:'))\n",
+    "print((n**2)+(m**2))\n",
+    "print(m**n)\n",
+    "print(pow(m,n))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter the Priciple amount:1000\n",
+      "enter the rate of interest:10\n",
+      "enter the no.of years:1\n",
+      "Simple interest:  10000\n"
+     ]
+    }
+   ],
+   "source": [
+    "#A = P(1+rt)\n",
+    "p = int(input('enter the Priciple amount:'))\n",
+    "r = int(input('enter the rate of interest:'))\n",
+    "t = int(input('enter the no.of years:'))\n",
+    "a = p*(1+(r*t))\n",
+    "SI = a-p\n",
+    "print ('Simple interest: ',SI)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter the Priciple amount:1000\n",
+      "enter the rate of interest:10\n",
+      "enter the no.of years:1\n",
+      "enter the no.of times interest applied:2\n",
+      "Compound interest:  35000.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "#A = P((1+(r/n))**(n*t))\n",
+    "p = int(input('enter the Priciple amount:'))\n",
+    "r = int(input('enter the rate of interest:'))\n",
+    "t = int(input('enter the no.of years:'))\n",
+    "n = int(input('enter the no.of times interest applied:'))\n",
+    "a = p*((1+(r/n))**(n*t))\n",
+    "CI = a-p\n",
+    "print('Compound interest: ', CI)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter the no.of natural nos:2\n",
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "#sum of first n natural nos\n",
+    "\n",
+    "n = int(input('enter the no.of natural nos:'))\n",
+    "i = 1\n",
+    "sum = 0\n",
+    "while i<=n:\n",
+    "    sum = sum+i\n",
+    "    i=i+1\n",
+    "print(sum)\n",
+    "    \n",
+    "\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter the value for n: 10\n",
+      "enter the value for m: 20\n",
+      "value of m after swapping:  10\n",
+      "value of n after swapping:  20\n"
+     ]
+    }
+   ],
+   "source": [
+    "# swapping two numbers\n",
+    "\n",
+    "n = int(input('enter the value for n: '))\n",
+    "m = int(input('enter the value for m: '))\n",
+    "temp = 0\n",
+    "temp = n\n",
+    "n = m\n",
+    "m = temp\n",
+    "print('value of m after swapping: ',m)\n",
+    "print('value of n after swapping: ',n)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter the value for n: 10\n",
+      "enter the value for m: 20\n",
+      "value of m after swapping:  10\n",
+      "value of n after swapping:  20\n"
+     ]
+    }
+   ],
+   "source": [
+    "# another method for swapping\n",
+    "n = int(input('enter the value for n: '))\n",
+    "m = int(input('enter the value for m: '))\n",
+    "n,m = m,n\n",
+    "print('value of m after swapping: ',m)\n",
+    "print('value of n after swapping: ',n)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter the string: welcome to the world\\n\n",
+      "False\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "# The isspace() methods ree turns “True” if all characters in the string are whitespace characters, Otherwise, It returns “False”.\n",
+    "# This function is used to check if the argument contains all whitespace characters such as :\n",
+    "\n",
+    "# ‘ ‘ – Space\n",
+    "# ‘\\t’ – Horizontal tab\n",
+    "# ‘\\n’ – Newline\n",
+    "# ‘\\v’ – Vertical tab\n",
+    "# ‘\\f’ – Feed\n",
+    "# ‘\\r’ – Carriage return\n",
+    "\n",
+    "str = input('enter the string: ')\n",
+    "print(str.isspace())\n",
+    "strr = '\\n \\n \\n'\n",
+    "print(strr.isspace())\n",
+    "\n",
+    "#how can we get the input as escape sequence"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The ASCII value of 'a' is 97\n"
+     ]
+    }
+   ],
+   "source": [
+    "#ASCII value of a character\n",
+    "\n",
+    "str = 'a'\n",
+    "print(\"The ASCII value of '\" + str + \"' is\", ord(str))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter the area of the circle:4\n",
+      "Circumference of the circle is:  7.089146634116127\n"
+     ]
+    }
+   ],
+   "source": [
+    "import math\n",
+    "\n",
+    "Area = int(input('enter the area of the circle:'))\n",
+    "r = math.sqrt(Area/3.141)\n",
+    "Circum = 2*3.141*r\n",
+    "print('Circumference of the circle is: ', Circum)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter the mark of 1st subject out of 100:20\n",
+      "enter the mark of 2nd subject out of 100:20\n",
+      "enter the mark of 3rd subject out of 100:20\n",
+      "enter the mark of 4th subject out of 100:20\n",
+      "enter the mark of 5th subject out of 100:20\n",
+      "20.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "first = int(input('enter the mark of 1st subject out of 100:'))\n",
+    "second = int(input('enter the mark of 2nd subject out of 100:'))\n",
+    "third = int(input('enter the mark of 3rd subject out of 100:'))\n",
+    "fourth = int(input('enter the mark of 4th subject out of 100:'))\n",
+    "fifth = int(input('enter the mark of 5th subject out of 100:'))\n",
+    "percen = (first+second+third+fourth+fifth)/5\n",
+    "print(percen)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.1"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
