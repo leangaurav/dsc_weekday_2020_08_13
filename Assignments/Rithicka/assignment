@@ -1,0 +1,140 @@
+In [5]:
+#C=(F−32)×5/9
+
+temp = int(input('enter the temperature in Fahrenheit:'))
+cel = (temp - 32)*(5/9)
+print('temperature in celcius:', cel)
+enter the temperature in Fahrenheit:12
+temperature in celcius: -11.11111111111111
+In [6]:
+a = int(input('enter the number:'))
+print('square of the number:',a**2)
+print('cube of the number:',a**3)
+enter the number:2
+square of the number: 4
+cube of the number: 8
+In [8]:
+n = int(input('enter the number:'))
+m = int(input('enter the number:'))
+print((n**2)+(m**2))
+print(m**n)
+print(pow(m,n))
+enter the number:2
+enter the number:3
+13
+9
+9
+In [14]:
+#A = P(1+rt)
+p = int(input('enter the Priciple amount:'))
+r = int(input('enter the rate of interest:'))
+t = int(input('enter the no.of years:'))
+a = p*(1+(r*t))
+SI = a-p
+print ('Simple interest: ',SI)
+enter the Priciple amount:1000
+enter the rate of interest:10
+enter the no.of years:1
+Simple interest:  10000
+In [10]:
+#A = P((1+(r/n))**(n*t))
+p = int(input('enter the Priciple amount:'))
+r = int(input('enter the rate of interest:'))
+t = int(input('enter the no.of years:'))
+n = int(input('enter the no.of times interest applied:'))
+a = p*((1+(r/n))**(n*t))
+CI = a-p
+print('Compound interest: ', CI)
+enter the Priciple amount:1000
+enter the rate of interest:10
+enter the no.of years:1
+enter the no.of times interest applied:2
+Compound interest:  35000.0
+In [30]:
+#sum of first n natural nos
+
+n = int(input('enter the no.of natural nos:'))
+i = 1
+sum = 0
+while i<=n:
+    sum = sum+i
+    i=i+1
+print(sum)
+enter the no.of natural nos:2
+3
+In [32]:
+# swapping two numbers
+
+n = int(input('enter the value for n: '))
+m = int(input('enter the value for m: '))
+temp = 0
+temp = n
+n = m
+m = temp
+print('value of m after swapping: ',m)
+print('value of n after swapping: ',n)
+enter the value for n: 10
+enter the value for m: 20
+value of m after swapping:  10
+value of n after swapping:  20
+In [33]:
+# another method for swapping
+n = int(input('enter the value for n: '))
+m = int(input('enter the value for m: '))
+n,m = m,n
+print('value of m after swapping: ',m)
+print('value of n after swapping: ',n)
+enter the value for n: 10
+enter the value for m: 20
+value of m after swapping:  10
+value of n after swapping:  20
+In [6]:
+# The isspace() methods ree turns “True” if all characters in the string are whitespace characters, Otherwise, It returns “False”.
+# This function is used to check if the argument contains all whitespace characters such as :
+
+# ‘ ‘ – Space
+# ‘\t’ – Horizontal tab
+# ‘\n’ – Newline
+# ‘\v’ – Vertical tab
+# ‘\f’ – Feed
+# ‘\r’ – Carriage return
+
+str = input('enter the string: ')
+print(str.isspace())
+strr = '\n \n \n'
+print(strr.isspace())
+
+#how can we get the input as escape sequence
+enter the string: welcome to the world\n
+False
+True
+In [7]:
+#ASCII value of a character
+
+str = 'a'
+print("The ASCII value of '" + str + "' is", ord(str))
+The ASCII value of 'a' is 97
+In [9]:
+import math
+
+Area = int(input('enter the area of the circle:'))
+r = math.sqrt(Area/3.141)
+Circum = 2*3.141*r
+print('Circumference of the circle is: ', Circum)
+enter the area of the circle:4
+Circumference of the circle is:  7.089146634116127
+In [10]:
+first = int(input('enter the mark of 1st subject out of 100:'))
+second = int(input('enter the mark of 2nd subject out of 100:'))
+third = int(input('enter the mark of 3rd subject out of 100:'))
+fourth = int(input('enter the mark of 4th subject out of 100:'))
+fifth = int(input('enter the mark of 5th subject out of 100:'))
+percen = (first+second+third+fourth+fifth)/5
+print(percen)
+enter the mark of 1st subject out of 100:20
+enter the mark of 2nd subject out of 100:20
+enter the mark of 3rd subject out of 100:20
+enter the mark of 4th subject out of 100:20
+enter the mark of 5th subject out of 100:20
+20.0
+In [ ]:
