@@ -1,0 +1,73 @@
+# Q1. Input temperature in Fahrenheit and print in Celsius
+# Logic
+# -> Subtract 32 from the Fahrenheit temperature.
+# -> Multiply this number by five.
+# -> Divide the result by nine.
+# Q1 Solution
+
+  f_temp = float( input("Enter Fahrenheit temperature: ") )
+  sub_result =  f_temp - 32.0
+  celsius =  ( sub_result * 5 ) / 9
+  print("Given fahrenheit temperature in celsius is: ")
+  print(round(celsius, 2))
+
+
+# Q2. WAP to input a number and print its square and cube
+# Solution
+
+  num = int( input("Enter a number: ") )
+
+  # square of a number
+  sq_res = ( num * num )
+  print("Square of a given number is ")
+  print(sq_res)
+
+  # cube of a number
+  cube_res = ( sq_res * num )
+  print("Cube of a given number is ")
+  print(cube_res)
+
+
+# Q3. WAP to input number n and number m and print n^2 + m^2
+# Solution
+
+  n = int( input("Enter first number: ") )
+  m = int( input("Enter second number: ") )
+
+  sum_of_squares = (n * n) + (m * m)
+
+  print("Sum of squares of given 2 numbers is: ")
+  print(sum_of_squares)
+
+# Q4. WAP to input m & n and print result M power of N
+# Solution
+
+  m = int( input("Enter First number: ") )
+  n = int( input("Enter Second number: ") )
+
+  # using power function
+  power_res = pow(m,n)
+  print("Result of M and N using power func is ")
+  print(power_res)
+
+  # using exponential **
+  exp_res = m**n
+  print("Exponential Result of M and N is ")
+  print(exp_res)
+
+# Q5. Write a simple interest calculator
+# Logic
+# SI = PrincipalAmount * RateOfInterest * Tenure
+# Solution
+
+  # take input data from user
+  p = float(input("Enter Principal Amount: "))
+  r = float(input("Enter Rate of Interest: "))
+  t = float(input("Enter Tenure: "))
+ 
+  si = (p * r * t)
+
+  print("Simple Interest for the given inputs is ")
+  print(si)
+
+# 
