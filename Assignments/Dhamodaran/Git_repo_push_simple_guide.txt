@@ -1,0 +1,74 @@
+
+
+These simple steps might be helpful. 
+These steps I followed and pushed my files to Git repo successfully.
+You may consider it as a reference.
+I would welcome if any changes/ updates on this document.
+
+
+Git Push - Summary of Steps:
+============================
+
+Open Git Bash command line console (for Windows)
+
+Goto directory where you want to clone the remote repository
+(ex. cd d/learnbay/)
+
+$ git clone https://github.com/leangaurav/dsc_weekday_2020_08_13
+Cloning into 'dsc_weekday_2020_08_13'...
+...
+Note: 
+The clone dir is created (ex. cd d/learnbay/dsc_weekday_2020_08_13)
+
+$ git status
+On branch master
+...
+
+
+Now create a local directory inside in your name.
+Ex. "d/learnbay/dsc_weekday_2020_08_13/Assignments/YourName/"
+Then move to the Assignments/ dir.
+Ex. $ cd d/learnbay/dsc_weekday_2020_08_13/Assignments/
+
+
+$ git add YourName/
+warning: LF will be replaced by CRLF in Assignments/YourName/.... 
+Note: 
+ignore this warning
+
+
+$ git status
+...
+	new file:   YourName/xxxxxxxxxxxxx.ipynb
+...
+Note: The new file added reflects in status
+
+
+$ git config --global user.email "you@example.com"
+$ git config --global user.name "Your Name"
+
+
+$ git commit -m "Your meaningful comment"
+
+
+$ git remote add origin https://github.com/leangaurav/dsc_weekday_2020_08_13
+fatal: remote origin already exists.
+Note: we already pointing to the correct remote url
+
+
+$ git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+...
+To https://github.com/leangaurav/dsc_weekday_2020_08_13
+   ad03d2c..bc6d07c  master -> master
+NOTE: 
+This will ask your Github login credentials. Supply it.
+
+
+Now check the URL in your browser:
+https://github.com/leangaurav/dsc_weekday_2020_08_13/tree/master/Assignments
+Note:
+YourName folder should be present over there.
+
+				---- End ----
